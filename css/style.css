@@ -1,9 +1,10 @@
 body{
     background-color: #1a1c2c;
+    margin: 0;
 }
 
 
-#grid { 
+#start-page { 
     display: grid;
     margin-top: 30px;
     grid-template-columns: 700px;
@@ -37,9 +38,6 @@ body{
    
   }
 
-  .about-sputnik-red{
-     /* margin-bottom: 40px;  */
-  }
   .continue-icon{
    
     height: 64px;
@@ -51,6 +49,70 @@ body{
   .cookies, a{
       color:#5E5E5E;
   }
-  .responsive{
+ 
+  
+  #main-page{
+
     display: none;
+    grid-template-areas:
+        "nav tab"
+        "nav about"
+        "nav more"
+        "nav img";
+    grid-template-rows :  repeat(4, 1fr);
+    grid-template-columns: 260px 1fr;
+    grid-gap: 0;
+    height: 100vh;
+
   }
+
+  .navigation, .tab, .about, .more, .main-page-img {
+    padding: 0;
+  }
+  .navigation{
+    background-color: #C4C4C4;
+    grid-area: nav;
+  }
+
+  .tab{
+    grid-area: tab;
+  }
+
+  .about{
+    grid-area: about;
+  }
+
+  .more{
+    grid-area: more;
+  }
+  .main-page-img{
+    grid-area: img;
+  }
+
+ #menu{
+   display: grid;
+   width: 200px;
+   grid-template-rows :  repeat(4, 1fr);
+   grid-template-columns: 1fr;
+   height: 100vh;
+  margin: 0 auto;
+   grid-gap: 10px;
+   
+ }
+
+.slidebar>ul{
+  
+ font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+list-style-type:none;
+list-style-image: url(/img/unchecked_list.png);
+}
+
+ul>li{
+  margin-bottom: 6px;
+  
+}

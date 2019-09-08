@@ -1,10 +1,12 @@
 document.getElementById("continueButton").onclick = continueHandler;
 document.getElementById("continue").onclick = continueHandler;
 function continueHandler(){
-   var continueElem = document.getElementById("grid");
-        if(continueElem.className === "grid"){
+   var continueElem = document.getElementById("start-page");
+   var mainPageElem = document.getElementById("main-page");
+        if(continueElem.className === "start-page"){
             continueElem.style.display = "none";
+            mainPageElem.style.display = "grid";
         } else {
-            continueElem.className = "grid";
+            continueElem.className = "start-page";
         };
     } 
