@@ -8,7 +8,7 @@ body{
 
 
 #start-page {
-   margin-top: 10px; 
+    margin-top: 10px; 
     display: grid;
     height: 100vh;
     /* margin-top: 30px; */
@@ -47,7 +47,24 @@ body{
    
   }
   
-
+#continue{
+     color: red;
+    -webkit-animation: continue-animation 20s; 
+    animation: continue-animation 20s;
+}
+@keyframes continue-animation {
+  0%   {color: red;}
+  10%  {color: yellow;}
+  20%  {color: aqua;}
+  30%  {color: purple;}
+  40%  {color: rgb(115, 240, 90);}
+  50%  {color: rgb(201, 107, 107);}
+  60%  {color: rgb(160, 52, 202);}
+  70%  {color: rgb(105, 105, 190);}
+  80%  {color: rgb(230, 153, 39);}
+  90%  {color: blue;}
+  100% {color: green;}
+}
   .continue-icon{
     height: 64px;
     width: 64px;
@@ -67,18 +84,34 @@ body{
 
     display: none;
     grid-template-areas:
-        "nav tab"
-        "nav about"
-        "nav more"
-        "nav img";
-    grid-template-rows :  repeat(4, 1fr);
-    grid-template-columns: 260px 1fr;
+        "nav owl"
+        "nav owl"
+        "nav owl"
+        "nav owl";
+    /* grid-template-rows :  repeat(1, 1fr);
+    grid-template-columns: 260px 1fr; */
+    grid-template-rows :   1fr;
+    grid-template-columns: 20vw 80vw ;
     /* grid-gap: 0; */
     height: 100vh;
 
   }
 
+  .owl-carousel{
+    min-width: 250px;
+    max-width: 70vw;
+    align-self: center;
+    justify-self: center;
+    grid-area: owl;
+   
+  }
+  .owl-carousel>img{
+   
+    height: 200px;
+    widows: 200px;
+  }
   .navigation, .tab, .about, .more, .main-page-img {
+    min-width: 260px;
     padding: 0;
     margin: 0;
   }
@@ -148,18 +181,22 @@ list-style:none;
 }
 .slidebar>ul>li:first-child{
   background: url('../img/checked_list.png') no-repeat; 
-  margin-top:7px;
-  padding:4px;
-  padding-left: 35px;
-  padding-right: 35px;
+ 
   
 }
 li>a{
   color: #000000;
   text-decoration: none;
 }
-.mouse-img{
-  /* margin: 0 auto; */
+
+
+
+.test{
+  display: grid;
+  grid-gap: 15px;
 }
-
-
+.test>div{
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+}
