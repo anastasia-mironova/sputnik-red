@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #1a1c2c;
     margin: 0;
     font-family: Roboto Condensed;
@@ -6,195 +6,187 @@ body{
     font-weight: normal;
 }
 
-
 #start-page {
-    margin-top: 10px; 
+    margin-top: 10px;
     display: grid;
     height: 100vh;
-    /* margin-top: 30px; */
     grid-template-columns: 700px;
-    /* grid-template-rows: 200px 70px 64px  56px 70px; */
-     grid-template-rows: repeat(5, min-content);
+    grid-template-rows: repeat(5, min-content);
     grid-row-gap: 6%;
     justify-content: center;
-     
-    }
+}
 
-  .logo-sputnik-red, .descpription, .continue-icon {
-    /* margin: 0 auto; */
+.logo-sputnik-red,
+.descpription,
+.continue-icon {
     justify-self: center;
     align-self: center;
-  }
+}
 
-  .logo-sputnik-red>img{
-    
+.logo-sputnik-red>img {
     height: 230px;
-    width:auto ;
-    }
-  
-  .descpription{
-    /* height: 67px; */
+    width: auto;
+}
+
+.descpription {
     width: 550px;
     word-wrap: break-word;
     font-family: Roboto Condensed;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    /* line-height: 26px; */
     text-align: center;
     color: #FFFFFF;
-    /* margin: 0 auto 0px; */
-   
-  }
-  
-#continue{
-     color: red;
-    -webkit-animation: continue-animation 20s; 
+}
+
+#continue {
+    color: red;
+    -webkit-animation: continue-animation 20s;
     animation: continue-animation 20s;
 }
+
 @keyframes continue-animation {
-  0%   {color: red;}
-  10%  {color: yellow;}
-  20%  {color: aqua;}
-  30%  {color: purple;}
-  40%  {color: rgb(115, 240, 90);}
-  50%  {color: rgb(201, 107, 107);}
-  60%  {color: rgb(160, 52, 202);}
-  70%  {color: rgb(105, 105, 190);}
-  80%  {color: rgb(230, 153, 39);}
-  90%  {color: blue;}
-  100% {color: green;}
+    0% {
+        color: red;
+    }
+    10% {
+        color: yellow;
+    }
+    20% {
+        color: aqua;
+    }
+    30% {
+        color: purple;
+    }
+    40% {
+        color: rgb(115, 240, 90);
+    }
+    50% {
+        color: rgb(201, 107, 107);
+    }
+    60% {
+        color: rgb(160, 52, 202);
+    }
+    70% {
+        color: rgb(105, 105, 190);
+    }
+    80% {
+        color: rgb(230, 153, 39);
+    }
+    90% {
+        color: blue;
+    }
+    100% {
+        color: green;
+    }
 }
-  .continue-icon{
+
+.continue-icon {
     height: 64px;
     width: 64px;
-    /* margin: 0 auto; */
-  }
-
-.cookies{
-  align-self: end ;
 }
-  .cookies, .cookies>a{
-      color:#5E5E5E;
-  }
- 
- 
-  
-  #main-page{
 
+.cookies {
+    align-self: end;
+}
+
+.cookies,
+.cookies>a {
+    color: #5E5E5E;
+}
+
+#main-page {
     display: none;
-    grid-template-areas:
-        "nav owl"
-        "nav owl"
-        "nav owl"
-        "nav owl";
-    /* grid-template-rows :  repeat(1, 1fr);
-    grid-template-columns: 260px 1fr; */
-    grid-template-rows :   1fr;
-    grid-template-columns: 20vw 80vw ;
-    /* grid-gap: 0; */
+    grid-template-areas: "nav owl" "nav owl" "nav owl" "nav owl";
+    grid-template-rows: 1fr;
+    grid-template-columns: 20vw 80vw;
     height: 100vh;
+}
 
-  }
-
-  .owl-carousel{
+.owl-carousel {
     min-width: 250px;
     max-width: 70vw;
     align-self: center;
     justify-self: center;
     grid-area: owl;
-   
-  }
-  .owl-carousel>img{
-   
+}
+
+.owl-carousel>img {
     height: 200px;
     widows: 200px;
-  }
-  .navigation, .tab, .about, .more, .main-page-img {
+}
+
+.navigation,
+.tab,
+.about,
+.more,
+.main-page-img {
     min-width: 260px;
     padding: 0;
     margin: 0;
-  }
-  .navigation{
+}
+
+.navigation {
     background-color: #C4C4C4;
     grid-area: nav;
-  }
-
-  .tab{
-    grid-area: tab;
-  }
-
-  .about{
-    grid-area: about;
-  }
-
-  .more{
-    grid-area: more;
-  }
-  .main-page-img{
-    grid-area: img;
-  }
-
- #menu{
-   display: grid;
-   width: 1fr;
-   /* grid-template-rows :  200px, repeat(3, 1fr); */
-   grid-template-rows :  repeat(4, min-content);
-   grid-template-columns: 1fr;
-   height: 100%;
-   margin: 0 auto;
-   /* grid-gap:0; */
-   
- }
- .logo-sputnik-red-main, .slidebar,.mouse-img{
-  justify-self: center;
- }
- .logo-sputnik-red-main{
-  align-self: center;
-  /* margin: 0 auto; */
-  /* justify-self: center; */
-  }
- .logo-sputnik-red-main>img{
-   padding: 15px;
- /* // margin: 0 auto; */
-  height:auto;
-  width:200px;
-  }
-
-.slidebar ul{
-/* font-family: Roboto Condensed; */
-/* font-style: normal;
-font-weight: normal; */
-font-size: 16px;
-line-height: 21px;
-text-align: center;
-list-style:none;
-/* list-style-image: url('../img/unchecked_list.png');  */
 }
 
-.slidebar>ul>li{
-  background: url('../img/unchecked_list.png') no-repeat; 
-  margin-top:7px;
-  padding:4px;
-  padding-left: 35px;
-  padding-right: 35px;
-}
-.slidebar>ul>li:first-child{
-  background: url('../img/checked_list.png') no-repeat;   
-}
-li>a{
-  color: #000000;
-  text-decoration: none;
+#menu {
+    display: grid;
+    width: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    grid-template-columns: 1fr;
+    height: 100%;
+    margin: 0 auto;
 }
 
-
-
-.test{
-  display: grid;
-  grid-gap: 15px;
+.logo-sputnik-red-main,
+.slidebar,
+.mouse-img {
+    justify-self: center;
 }
-.test>div{
-  height: 100px;
-  width: 100px;
-  background-color: aqua;
+
+.logo-sputnik-red-main {
+    align-self: center;
+}
+
+.logo-sputnik-red-main>img {
+    padding: 15px;
+    height: auto;
+    width: 200px;
+}
+
+.slidebar ul {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    list-style: none;
+}
+
+.slidebar>ul>li {
+    background: url('../img/unchecked_list.png') no-repeat;
+    margin-top: 7px;
+    padding: 4px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.slidebar>ul>li:first-child {
+    background: url('../img/checked_list.png') no-repeat;
+}
+
+li>a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.test {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.test>div {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
 }
