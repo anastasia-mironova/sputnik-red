@@ -14,6 +14,12 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel(
         {   loop:true,
             margin:10,
-            items : 1
+            items : 1,
+            autoplay: true,
+            autoplayTimeout: 5000
         });
 });
+document.getElementById("navigation").onmousewheel = wheelHandler;
+function wheelHandler(){
+       document.location.href='http://snipcode.ru';
+}

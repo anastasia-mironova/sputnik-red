@@ -1,0 +1,186 @@
+body{
+    background-color: #1a1c2c;
+    margin: 0;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+}
+
+  
+#whyWe{
+ 
+    display: grid;
+    /* grid-template-areas:
+    "nav why fir fir head head"
+    "nav why why sec sec har"
+    "nav why why third third har"
+    "nav why four four foot foot"; */
+    grid-template-areas:
+
+        "nav why fir fir fir fir"
+        "nav why sec sec sec har"
+        "nav why third third third har"
+        "nav why four four four four";
+    /* grid-template-rows :  repeat(1, 1fr);
+    grid-template-columns: 260px 1fr; */
+    /* grid-template-rows :   repeat(4,25vh);
+    grid-template-columns: 20vw 20vw  10vw 10vw 10vw 20vw; */
+    grid-template-rows :   repeat(4,25vh);
+    grid-template-columns: min-content auto  10vw 10vw 10vw 25vw;
+    /* grid-gap: 0; */
+    /* height: 100vh; */
+
+  }
+
+ .content{
+     grid-area: cont;
+ }
+  .navigation, .tab, .about, .more, .main-page-img {
+    min-width: 260px;
+    padding: 0;
+    margin: 0;
+  }
+  .navigation{
+    background-color: #C4C4C4;
+    grid-area: nav;
+  }
+
+  .tab{
+    grid-area: tab;
+  }
+
+  .about{
+    grid-area: about;
+  }
+
+  .more{
+    grid-area: more;
+  }
+  .main-page-img{
+    grid-area: img;
+  }
+
+ #menu{
+   display: grid;
+   width: 1fr;
+   /* grid-template-rows :  200px, repeat(3, 1fr); */
+   grid-template-rows :  repeat(4, min-content);
+   grid-template-columns: 1fr;
+   height: 100%;
+   margin: 0 auto;
+   /* grid-gap:0; */
+   
+ }
+ .logo-sputnik-red-main, .slidebar,.mouse-img{
+  justify-self: center;
+ }
+ .logo-sputnik-red-main{
+  align-self: center;
+  /* margin: 0 auto; */
+  /* justify-self: center; */
+  }
+ .logo-sputnik-red-main>img{
+   padding: 15px;
+ /* // margin: 0 auto; */
+  height:auto;
+  width:200px;
+  }
+
+.slidebar ul{
+/* font-family: Roboto Condensed; */
+/* font-style: normal;
+font-weight: normal; */
+font-size: 16px;
+line-height: 21px;
+text-align: center;
+list-style:none;
+/* list-style-image: url('../img/unchecked_list.png');  */
+}
+
+.slidebar>ul>li{
+  background: url('../img/unchecked_list.png') no-repeat; 
+  margin-top:7px;
+  padding:4px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.slidebar>ul>li:nth-child(2){
+  background: url('../img/checked_list.png') no-repeat; 
+  /* font-style: solid;
+  color: aqua;  */
+}
+li>a{
+  color: #000000;
+  text-decoration: none;
+}
+/* 
+.content{
+    display: grid;
+    height: 100vh;
+    grid-template-rows :   1fr 1fr 1fr 1fr;
+    grid-template-columns: auto  100px 100px 100px auto; 
+      grid-template-areas:
+    
+
+} */
+
+
+/* .test{
+  display: grid;
+  grid-gap: 15px;
+}
+.test>div{
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+} */
+
+
+.why-us{
+    grid-area: why;
+    align-self: center;
+    justify-self: center;
+}
+.first-reason{
+    grid-area: fir;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: start;
+    align-items: center;
+    
+}
+.second-reason{
+    grid-area: sec;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: end;
+    align-items: center;
+}
+.third-reason{
+    grid-area: third;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: end;
+    align-items: center;
+}
+.four-reason{
+    grid-area: four;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: start;
+    align-items: center;
+
+}
+.harold{
+    grid-area: har;
+    background-color: rgb(255, 136, 0);
+}
+ .text-style{
+     color: #FFFFFF;
+     font-size: 22pt;
+     word-wrap: break-word;
+ }
