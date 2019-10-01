@@ -180,9 +180,7 @@ list-style:none;
   padding-right: 35px;
 }
 .slidebar>ul>li:first-child{
-  background: url('../img/checked_list.png') no-repeat; 
- 
-  
+  background: url('../img/checked_list.png') no-repeat;   
 }
 li>a{
   color: #000000;

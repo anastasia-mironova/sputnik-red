@@ -19,7 +19,7 @@ $(document).ready(function(){
             autoplayTimeout: 5000
         });
 });
-document.getElementById("navigation").onmousewheel = wheelHandler;
+
 function wheelHandler(){
-       document.location.href='http://snipcode.ru';
+      document.location.href = "whyWe.html";
 }
